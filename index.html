@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Allizart</title>
+  <script src="./js/tailwind@3.0.14.js"></script>
+  <link href="./image/favicon.png" rel="icon" />
+	<link href="./css/swiper-bundle.min.css" rel="stylesheet" />
+	<link href="./css/app.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'se': '375px',
+          'xs': '414px',
+          'sm': '768px',
+          'md': '992px',
+          'ld': '1024px',
+          'lg': '1366px',
+          'xl': '1920px',
+        },
+        extend: {
+          colors: {
+            textblue: '#2E0E7C',
+            darkblue: '#080B1A',
+            deepblue: '#080B1A',
+            lightblue: '#01003A',
+            deepred: '#9E1533',
+            lightred: '#E01E49',
+            instruction: "#F2F2F2",
+            parther: '#DCDCDC',
+            buttonhover: '#EF443F',
+            fontred: '#FF3631',
+            charyred: '#E01E49',
+            lightgreen: '#4CD2AD',
+            linecolor: '#4c4c4c',
+            timecolor: '#9C9C9C',
+          },
+        },
+        fontFamily: {
+          'sans': ['Prompt', 'sans-serif'],
+          'beatstreet': ['beatstreet', 'sans-serif']
+        },
+      }
+    };
+  </script>
+  <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SV2GQDKPQ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SV2GQDKPQ2');
+  </script> -->
+<body>
+<div id="app" class="tracking-[1px]">
+  <header 
+  class="fixed w-full h-[60px] px-10 flex items-center z-40" 
+  style="backdrop-filter: blur(7px);-webkit-backdrop-filter: blur(7px);">
+    <a href="/" class="appearance-none">
+      <img src="./image/art-logo.png" class="w-[90px]">
+    </a>
+  </header>    
+  <div class="absolute h-[860px] sm:h-[1020px] lg:h-screen w-full bg-black/70 flex justify-center items-center flex-col z-50">
+  <ul class="text-center">
+    <li class="hidden md:flex text-2xl sm:text-4xl text-lightred font-bold tracking-[1px] leading-none">THE EVENT IS NOW CLOSED AND SOLD OUT</li>
+    <li class="flex justify-center md:hidden text-[1.7rem] sm:text-[2.25rem] leading-[1.5rem] sm:leading-[1.9rem] text-lightred font-bold">THE EVENT IS NOW</li>
+    <li class="flex justify-center md:hidden text-[1.7rem] sm:text-[2.25rem] leading-[1.5rem] sm:leading-[1.9rem] text-lightred font-bold">CLOSED AND SOLD OUT</li>
+    <li class="text-[11px] sm:text-[16.8px] leading-[1.2rem] text-white mt-2 font-bold">STAY TUNED FOR <span class="bg-textblue p-0 m-0">ALLIZART.IO</span> OFFICIAL WEBSITE</li>
+    <li class="text-[15.5px] sm:text-[21px] text-white tracking-[1px] sm:tracking-[1.4px] leading-[1.2rem] font-bold">WITH MORE PRODUCTS COMING SOON!</li>
+  </ul>
+</div>
+
+<section 
+class="relative overflow-hidden bg-vapor-fixed h-[860px] sm:h-[1020px] lg:h-screen w-full flex justify-center items-center sm:pb-4 pt-24 sm:pt-32 lg:pt-16">
+  <div class="h-[420px] sm:h-[260px] w-full absolute bottom-0 z-10 bg-gradient-to-r from-deepred to-lightred"></div>
+  <div 
+  class="relative max-w-5xl w-full flex flex-col lg:flex-row mx-auto z-20">
+
+    <div 
+    class="w-full lg:w-2/3 flex flex-col justify-center lg:justify-end items-center z-20 relative">
+      <div class="flex lg:hidden flex-col z-20 justify-center items-center">
+        <h3 class="text-lightred font-bold text-[39px] xs:text-[40px] sm:text-[46px] md:text-[56px] tracking-[1.5px] xs:tracking-[1px] leading-none">LIMITED RELEASE</h3>
+        <h4 class="text-white text-[13px] sm:text-[15px] md:text-[19px] font-bold tracking-[1.3px]">
+          <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+        </h4>
+        <h3 class="text-white pb-12 font-bold text-[47px] sm:text-[54px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+      </div>
+
+      <img 
+      src="./image/index_GK_IMG_0285_1366.png" 
+      class="h-[320px] sm:h-[360px] lg:h-[520px] pb-4 relative lg:absolute lg:bottom-4 lg:-right-12 scale-150 lg:scale-110 z-10" 
+      loading="lazy">
+    </div>
+
+    <div class="w-full flex flex-col justify-center items-center z-30 pt-20 pb-10">
+      <div class="hidden lg:flex flex-col">
+      <h3 class="text-lightred font-bold text-[46px] md:text-[56px] leading-none">LIMITED RELEASE</h3>
+      <h4 
+      class="text-white text-[16px] md:text-[19px] font-bold" 
+      style="letter-spacing: 1.3px">
+        <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+      </h4>
+      <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+      </div>
+
+      <div class="flex flex-row space-x-2 w-full pl-4 pr-5 md:px-2 justify-center">
+        <div 
+        class="w-[120px] sm:w-[180px] h-[120px] sm:h-[180px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
+            <li class="text-white sm:py-2 font-bold text-[32px] sm:text-[46px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white text-[8px] sm:text-[10px] font-thin whitespace-pre">*50 copies only</li>
+          </ul>
+        </div>
+        <div 
+        class="max-w-[320px] sm:w-full h-[120px] sm:h-[180px] bt2" style="width: calc(100% - 100px);">
+          <div 
+          class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
+            <img 
+            src="./image/MM-logo.png" 
+            class="absolute -top-11 sm:-top-16 w-[120px] sm:w-[180px]" 
+            loading="lazy">
+
+            <div class="w-full px-6 flex flex-row">
+              <div class="w-full">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-[12px] sm:text-[16px] whitespace-pre">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-2 sm:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
+                    <span class="relative text-gray-300 text-[14px] sm:text-[24px] font-bold">
+                    $700
+                    <img 
+                    src="./image/delling.svg" 
+                    class="absolute top-0 h-full" 
+                    loading="lazy">
+                    </span>
+                    <span class="text-white font-bold text-[32px] sm:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
+                  </li>
+                  <li class="text-white text-[8px] sm:text-[10px] font-thin">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img 
+                src="./image/fomo.png" 
+                class="absolute top-2 -right-[1.5rem] sm:-right-6 w-[60px]" 
+                loading="lazy">
+                <img 
+                src="./image/pd-01.png" 
+                class="absolute bottom-0 -right-[0.7rem] sm:-right-10 w-[80px] sm:w-[140px]" 
+                loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section 
+class="flex justify-center items-center bg-instruction">
+    <div 
+    class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-4">
+        <div 
+        class="grid grid-cols-3 gap-4 py-10 sm:py-14">
+            <div 
+            class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
+                <img 
+                src="./image/p1.png" 
+                class="grayscale h-[70px] w-[70px]" 
+                loading="lazy">
+                <p class="pt-2 text-[12px] text-center tracking-normal">Polystone,PU</p>
+            </div>
+            <div 
+            class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
+                <img 
+                src="./image/p2.png" 
+                class="grayscale h-[70px] w-[70px]" 
+                loading="lazy">
+                <p class="pt-2 text-[12px] text-center tracking-normal">1/6th</p>
+            </div>
+            <div 
+            class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
+                <img 
+                src="./image/p3.png" 
+                class="grayscale h-[70px] w-[70px]" 
+                loading="lazy">
+                <p class="pt-2 text-[12px] text-center tracking-normal">40 x 32 x 32 cm</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section 
+class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
+
+  <div 
+  class="max-w-5xl mx-auto w-full overflow-hidden px-4 space-y-4">
+    <div 
+    class="text-white flex items-center justify-center py-2">
+        <h3 
+      class="text-[2rem] sm:text-[3rem] ld:text-[4rem]">INFORMATION</h3>
+    </div>
+    <div 
+    class="bg-darkblue rounded-[0.3rem] flex justify-start items-start flex-col p-10 relative">
+        <h5 
+      class="text-lightred pb-4 text-2xl">ABOUT</h5>
+        <p 
+      class="font-light text-xs md:text-[14px] text-white text-left"
+      style="line-height: 22px;letter-spacing: 0px;">
+      The Last: Naruto the Movie has a red scarf bringing out the story’s beginning and end! In regards to this manga, Naruto, the scarf is a must-have for many ninjas, especially for Naruto Uzumaki, the red scarf has an irreplaceable special meaning. On the poster for The Last: Naruto the Movie, the main visual is Naruto Uzumaki with the red scarf wrapped around his neck! This red scarf is a representation of a love story because it was knitted by Hinata Hyuga. Although the scarf has been through countless battles and has sustained damage, Hinata still persistently knits the scarf over and over again, with every needle and thread representing her love for Naruto and announcing that the love story between the two of characters will begin. In order to bring the classic main visual on the poster, Zodiakos Studio went through the process of restoring the main character on the original poster, including Naruto’s expression and charm through refined engraving and painting, demonstrating expertise in restoration – even details of the knit patterns on the scarf are so realistic that one can see the restoration artist’s experienced sculpting abilities and also including the scarf’s flowing design, demonstrating incredibly vivid and dynamic visual effects – adding the perfect finishing touches on this GK. In terms of the scenes that players value, the studio definitely did not slack on either. In the most realistic aspect, the studio perfectly replicated the footprints in the snow through work with glitter to show the shimmering effect of snow grounds and a small Naruto snowman off to the side, giving a cute and lovable vibe. This GK is definitely a very detailed work! Zodiakos Studio is the studio for authentic GK, possessing top-notch craftsmanship and pursuit of perfection! All packaging for GK works include a luxury box, Styrofoam drawstring, perfect sealant, unboxing gloves, and the most important for the work – certification of authenticity and serial number iron plate. It is definitely a top-notch work of art!</p>
+    </div>
+    <div 
+    class="bg-darkblue rounded-[0.3rem] flex justify-start items-start flex-col p-10">
+        <h5 
+      class="text-lightred pb-4 text-2xl">DETAILS</h5>
+        <p 
+      class="font-light text-xs md:text-[14px] text-white text-left" 
+      style="line-height: 22px;letter-spacing: 0px;">
+      Product Serial Number: Z.S-001<br>
+      Scale: 1/6<br>
+      Dimensions: 40cm (H) x 32cm (W) x 32cm (D)<br>
+      Weight: 4.5kg<br>
+      Material: Polystone, PU<br>
+      Packaging Material: Styrofoam, box, leather<br>
+      Delivery: 2022-2023
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="bg-black">
+  <div 
+  id="product" 
+  class="swiper relative py-12 md:mr-40 max-h-[420px]">
+    <div 
+    class="swiper-wrapper relative">
+      <div 
+      class="swiper-slide">
+        <div class="relative">
+            <a 
+            data-fslightbox href="./image/IMG_0286.jpeg"
+            data-type="image" 
+            class="absolute w-full h-full z-20">
+            </a>
+            <img src="./image/IMG_0286.jpeg">
+        </div>
+      </div>
+      <div 
+      class="swiper-slide">
+        <div class="relative">
+            <a 
+            data-fslightbox href="./image/IMG_0283.jpeg"
+            data-type="image" 
+            class="absolute w-full h-full z-20">
+            </a>
+            <img src="./image/IMG_0283.jpeg">
+        </div>
+      </div>
+      <div 
+      class="swiper-slide">
+        <div class="relative">
+            <a 
+            data-fslightbox href="./image/IMG_0282.jpeg"
+            data-type="image" 
+            class="absolute w-full h-full z-20">
+            </a>
+            <img src="./image/IMG_0282.jpeg">
+        </div>
+      </div>
+      <div 
+      class="swiper-slide">
+        <div class="relative">
+            <a 
+            data-fslightbox href="./image/IMG_0290.jpeg"
+            data-type="image" 
+            class="absolute w-full h-full z-20">
+            </a>
+            <img src="./image/IMG_0290.jpeg">
+        </div>
+      </div>
+    </div>
+    <div 
+    class="absolute right-0 bottom-12 bg-white flex flex-row z-50">
+            <div 
+            class="w-14 p-3 bg-lightred text-white">
+              <div 
+              class="flex items-center justify-center">
+                <button type="button" class="bn1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+    </div>
+    <div 
+    class="absolute left-0 bottom-12 bg-white flex flex-row z-50">
+            <div 
+            class="w-14 p-3 bg-lightred text-white">
+              <div 
+              class="flex items-center justify-center">
+                <button type="button" class="bn2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+    </div>
+  </div>
+</section>
+
+<section 
+class="relative bg-gradient-to-r from-deepred to-lightred h-[820px] xs:h-[860px] sm::h-[860px] lg:h-screen w-full flex justify-center items-center overflow-hidden">
+  <div 
+  class="max-w-5xl w-full flex flex-col justify-center items-center lg:flex-row z-20 pt-[40px]">
+    <div class="md:w-1/2 flex flex-col justify-center items-center">
+      <div class="flex lg:hidden flex-col z-20">
+        <h3 class="text-gray-900 font-bold text-[39px] xs:text-[40px] sm:text-[46px] md:text-[56px] tracking-[1.5px] xs:tracking-[1px] leading-none">LIMITED RELEASE</h3>
+        <h4 class="text-white text-[13px] sm:text-[15px] md:text-[19px] font-bold tracking-[1.3px]">
+          <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+        </h4>
+        <h3 class="text-white pb-12 font-bold text-[47px] sm:text-[54px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+      </div>
+
+      <div 
+      class="w-full lg:w-2/3 flex lg:hidden flex-col justify-center lg:justify-end items-center z-10 relative">
+      <img 
+      src="./image/index_GK_IMG_0285_1366.png" 
+      class="h-[320px] sm:h-[360px] lg:h-[420px] pb-4 relative lg:absolute lg:bottom-4 lg:-right-12 scale-150 lg:scale-110 z-10" 
+      loading="lazy">
+      </div>
+
+      <div 
+      class="absolute object-cover top-0 -left-36 md:left-8 hidden lg:flex">
+        <img 
+        src="./image/index_GK_IMG_0285_1366.png" 
+        class="w-full h-full md:h-[1460px]" 
+        loading="lazy">
+      </div>
+    </div>
+    <div class="w-full flex flex-col justify-center items-center z-20">
+      <div class="hidden lg:flex flex-col">
+        <h3 class="text-gray-900 font-bold text-[46px] md:text-[56px] leading-none">LIMITED RELEASE</h3>
+        <h4 class="text-white text-[16px] md:text-[19px] font-bold" 
+        style="letter-spacing: 1.3px">
+          <span class="bg-textblue p-0 m-0">RESERVED COPY</span> LAST 100 UNITS WORLDWIDE
+        </h4>
+        <h3 class="text-white pb-12 font-bold text-[52px] md:text-[66px] leading-none">RAFFLES ONLY</h3>
+      </div>
+
+      <div class="flex flex-row space-x-2 w-full pl-4 pr-5 md:px-2 justify-center">
+        <div 
+        class="w-[120px] sm:w-[180px] h-[120px] sm:h-[180px] bg-gradient-to-t from-deepred to-lightred rounded-2xl flex items-end justify-center py-4">
+          <ul class="flex flex-col items-center">
+            <li class="text-white text-[12px] sm:text-[16px]">RETAIL</li>
+            <li class="text-white sm:py-2 font-bold text-[32px] sm:text-[46px]"><span class="text-[24px]">$</span>700</li>
+            <li class="text-white text-[8px] sm:text-[10px] font-thin whitespace-pre">*50 copies only</li>
+          </ul>
+        </div>
+        <div 
+        class="max-w-[320px] sm:w-full h-[120px] sm:h-[180px] bt4" style="width: calc(100% - 100px);">
+          <div 
+          class="w-full h-full bg-gradient-to-t from-deepblue to-lightblue rounded-2xl relative flex items-end justify-center py-4">
+            <img 
+            src="./image/MM-logo.png" 
+            class="absolute -top-11 sm:-top-16 w-[120px] sm:w-[180px]" 
+            loading="lazy">
+
+            <div class="w-full px-6 flex flex-row">
+              <div class="w-full">
+                <ul class="flex flex-col items-start">
+                  <li class="text-white text-[12px] sm:text-[16px] whitespace-pre">FOMO STONE HOLDER</li>
+                  <li class="text-2xl py-2 sm:py-6 flex flex-row space-x-2 lg:space-x-6 items-center">
+                    <span class="relative text-gray-300 text-[14px] sm:text-[24px] font-bold">
+                    $700
+                    <img 
+                    src="./image/delling.svg" 
+                    class="absolute top-0 h-full" 
+                    loading="lazy">
+                    </span>
+                    <span class="text-white font-bold text-[32px] sm:text-[46px]"><span class="text-[18px] xs:text-[24px]">$</span>199</span>
+                  </li>
+                  <li class="text-white text-[8px] sm:text-[10px] font-thin">*50 copies only</li>
+                </ul>
+              </div>
+              <div class="w-1/5 flex items-center">
+                <img 
+                src="./image/fomo.png" 
+                class="absolute top-2 -right-[1.5rem] sm:-right-6 w-[60px]" 
+                loading="lazy">
+                <img 
+                src="./image/pd-01.png" 
+                class="absolute bottom-0 -right-[0.7rem] sm:-right-10 w-[80px] sm:w-[140px]" 
+                loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="w-full bg-deepblue w-full h-full flex justify-center">
+  <div class="max-w-5xl w-full flex flex-col sm:flex-row justify-center items-center space-x-12 py-6 px-16 hidden sm:flex">
+    <div class="flex flex-col">
+      <img src="./image/footer-logo.png" class="w-[180px]">
+      <p class="text-white text-[12px] pt-2 font-thin">©2021 ALLizART. All rights reserved.</p>
+    </div>
+    <div class="text-lightred text-[16px] font-medium">More limited exclusive anime figures to arrive soon. Stay-tuned!</div>
+  </div>
+  <div class="max-w-5xl w-full flex flex-col sm:flex-row justify-center items-center py-6 px-4 flex sm:hidden">
+    <div class="flex flex-col">
+      <img src="./image/footer-logo.png" class="w-[180px]">
+    </div>
+    <div class="text-lightred text-[16px] font-medium py-4 text-center flex justify-center items-center">More limited exclusive anime figures to arrive soon. Stay-tuned!</div>
+    <p class="text-white text-[12px] pt-2 font-thin">©2021 ALLizART. All rights reserved.</p>
+  </div>
+</footer>  
+
+<a 
+id="button"
+class="fixed z-30 hidden p-3 text-white bottom-[5%] right-[2%] appearance-none cursor-pointer">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+  </svg>
+  <p 
+  class="mt-4 tracking-widest" 
+  style="writing-mode: vertical-lr;">BACK TO TOP</p>
+</a>
+
+</div>
+
+<script src="./js/swiper@7.4.1.js"></script>
+<script src="./js/fslightbox@3.0.9.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/appjs.js"></script>
+
+</body>
+</html>
