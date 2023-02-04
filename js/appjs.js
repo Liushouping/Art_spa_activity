@@ -15,6 +15,7 @@ btn.on('click', function(e) {
 // 
 const swiper = new Swiper('#product', {
   loop: true,
+  preventClicks: true,
   slidesPerView: 1,
   autoplay: {
   delay: 3000,
